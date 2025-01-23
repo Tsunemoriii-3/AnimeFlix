@@ -4,7 +4,7 @@ start_msg = """
 <b><i>» I'm Anime Flix - I Can Share Streaming And Download Links of Any Anime With You.
 » Just Type Name of Any Anime, And Get Surprised By The Results.
 » You Must Join My Channel @Sonic_Otakus To Use Me.
-» 
+» [Guide For Using Me](https://t.me/Anime_Stream_LLC/50) - [Clixk Here](https://t.me/Anime_Stream_LLC/50)
 » Enjoy Your Anime Watching Experience.</i></b>"""
 
 # [Sonic Otakus](https://t.me/Sonic_Otakus)! I can give streamable link as well as download link of all anime and do much more see help to know what I can do.
@@ -14,7 +14,6 @@ help_msg = """
 
 **» <u>Available Commands</u>**
 
-• /ongoing: Top 10 Trending Ongoing Anime.
 • /top: Top 10 All Time Popular Anime.
 • /character [character name]: Search For The Given Character.
 • <u>For Anime</u>: Just Type A Name, And Send It.</i></b>
