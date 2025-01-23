@@ -24,7 +24,6 @@ help_msg = """
 » Only Completed Anime Are Available ✅ In This Bot.</i></b>
 
 » 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐜𝐞 - [𝐀𝐝𝐦𝐢𝐧 𝐒𝐮𝐩𝐩𝐨𝐫𝐭](https://t.me/Illusion_Don)
-
 """
 
 dev_msg = """
