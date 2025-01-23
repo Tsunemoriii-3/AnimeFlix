@@ -87,7 +87,7 @@ async def callback_handlers(c: DENDENMUSHI, q: CallbackQuery):
             query = int(query)
             anime_found = get_anime_results(query, page)
             if anime_found == 429:
-                await q.answer("» 𝚃𝚘𝚘 𝙼𝚊𝚗𝚢 𝚄𝚜𝚎𝚛𝚜 𝙰𝚛𝚎 𝚄𝚜𝚒𝚗𝚐 𝙼𝚎, 𝙿𝚕𝚎𝚊𝚜𝚎 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗 𝙸𝚗 𝟻 𝙼𝚒𝚗𝚞𝚝𝚎𝚜.", True)
+                await q.answer("» 𝚃𝚘𝚘 𝙼𝚊𝚗𝚢 𝚄𝚜𝚎𝚛𝚜 𝙰𝚛𝚎 𝚄𝚜𝚒𝚗𝚐 𝙼𝚎, 𝙿𝚕𝚎𝚊𝚜𝚎 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗 𝙸𝚗 𝟻 𝙼𝚒𝚗𝚞𝚝𝚎𝚜.\n\n» 𝙲𝚔𝚎𝚌𝚔 𝙾𝚞𝚝 𝙼𝚢 𝙼𝚒𝚛𝚛𝚘𝚛𝚜 - [𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲](https://t.me/Anime_Stream_LLC/39)", True)
                 return
             query = (q.message.text or q.message.caption).split("\n")[0].split(":")[-1].strip()
             txt = anime_res_txt.format(q=query, p=page, tp=anime_found[1]["totalPage"])
@@ -120,7 +120,7 @@ async def callback_handlers(c: DENDENMUSHI, q: CallbackQuery):
         anime_info, picture = get_anime_info(name)
 
         if not anime_info:
-            anime_info = "» 𝚃𝚘𝚘 𝙼𝚊𝚗𝚢 𝚄𝚜𝚎𝚛𝚜 𝙰𝚛𝚎 𝚄𝚜𝚒𝚗𝚐 𝙼𝚎, 𝙿𝚕𝚎𝚊𝚜𝚎 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗 𝙸𝚗 𝟻 𝙼𝚒𝚗𝚞𝚝𝚎𝚜."
+            anime_info = "» 𝚃𝚘𝚘 𝙼𝚊𝚗𝚢 𝚄𝚜𝚎𝚛𝚜 𝙰𝚛𝚎 𝚄𝚜𝚒𝚗𝚐 𝙼𝚎, 𝙿𝚕𝚎𝚊𝚜𝚎 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗 𝙸𝚗 𝟻 𝙼𝚒𝚗𝚞𝚝𝚎𝚜.\n\n» 𝙲𝚔𝚎𝚌𝚔 𝙾𝚞𝚝 𝙼𝚢 𝙼𝚒𝚛𝚛𝚘𝚛𝚜 - [𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲](https://t.me/Anime_Stream_LLC/39)"
             picture = NO_RES_PIC
             to_del = False
             kb = None
@@ -220,7 +220,7 @@ async def callback_handlers(c: DENDENMUSHI, q: CallbackQuery):
         anime_info, picture = get_anime_info(name)
         to_del = True
         if not anime_info:
-            anime_info = "» 𝚃𝚘𝚘 𝙼𝚊𝚗𝚢 𝚄𝚜𝚎𝚛𝚜 𝙰𝚛𝚎 𝚄𝚜𝚒𝚗𝚐 𝙼𝚎, 𝙿𝚕𝚎𝚊𝚜𝚎 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗 𝙸𝚗 𝟻 𝙼𝚒𝚗𝚞𝚝𝚎𝚜."
+            anime_info = "» 𝚃𝚘𝚘 𝙼𝚊𝚗𝚢 𝚄𝚜𝚎𝚛𝚜 𝙰𝚛𝚎 𝚄𝚜𝚒𝚗𝚐 𝙼𝚎, 𝙿𝚕𝚎𝚊𝚜𝚎 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗 𝙸𝚗 𝟻 𝙼𝚒𝚗𝚞𝚝𝚎𝚜.\n\n» 𝙲𝚔𝚎𝚌𝚔 𝙾𝚞𝚝 𝙼𝚢 𝙼𝚒𝚛𝚛𝚘𝚛𝚜 - [𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲](https://t.me/Anime_Stream_LLC/39)"
             to_del = False
             picture = NO_RES_PIC
             kb = None
@@ -275,7 +275,7 @@ async def callback_handlers(c: DENDENMUSHI, q: CallbackQuery):
             if not _id:
                 kb = q.message.reply_markup
                 new_kb = await remove_button_from_kb(kb, q.data)
-                await q.answer("This anime is currently not available on GoGoanime.", True)
+                await q.answer("𝗧𝗵𝗶𝘀 𝗔𝗻𝗶𝗺𝗲 𝗶𝘀 𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆 ❌ 𝗡𝗼𝘁 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 ❌ 𝗢𝗻 𝗚𝗼𝗚𝗼-𝗔𝗻𝗶𝗺𝗲.", True)
                 await q.edit_message_reply_markup(new_kb)
                 return
             await q.answer("» 𝙶𝚎𝚗𝚎𝚛𝚊𝚝𝚒𝚗𝚐 𝙻𝚒𝚗𝚔𝚜, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁 . . .", True)
